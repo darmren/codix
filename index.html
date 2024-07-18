@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codix</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Домой<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#courses">Курсы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#instructors">Преподаватели</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Отзывы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Контакты</a>
+          </li>
+        </ul>
+
+        <a href="#register" class="register-link">Регистрация</a>
+
+        <!-- Registration modal window -->
+        <div id="register" class="modal">
+          <div class="modal-content text-center">
+            <h2>Регистрация</h2>
+            <form>
+              <!-- Form fields here -->
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Имя пользоватля"
+              /><br /><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Почта"
+              /><br /><br />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Пароль"
+              /><br /><br />
+              <button class="btn btn-primary">Регистрация</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="jumbotron jumbotron-fluid text-center bg-dark mb-0">
+      <!-- <div class="blur"></div> -->
+      <div class="container">
+        <h1 class="display-4">Добро пожаловать в Codix!</h1>
+        <p class="lead">Программируй будущее - кодируй успех с нами</p>
+        <a href="#courses" class="btn btn-primary btn-lg">Наши курсы</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container-fluid py-5">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-end flex-wrap">
+            <div class="inline-block p-4" style="width: 80%">
+              <h4>О нас</h4>
+              <p>
+                Мы - команда профессионалов, предлагающая образование в
+                программировании высшего уровня. Наша миссия - обеспечить
+                студентов навыками, необходимыми для успеха в сфере
+                информационных технологий.
+              </p>
+            </div>
+            <div class="inline-block p-4">
+              <h4>Наш формат</h4>
+              <ul>
+                <li>Обучениеи в гибридном формате</li>
+                <li>Собственная обучающая платформа</li>
+                <li>Индивидуальный подход к каждому студенту</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="inline-block img">
+            <img
+              src="https://media.istockphoto.com/id/1373258176/photo/little-african-american-school-boy-raising-hands-up-with-excitement-during-home-distance.jpg?s=612x612&w=0&k=20&c=ovy60H9_Ga6fKfAc2sL5BywZ_r0NiM6oPpC9YRAhcAM=
+            "
+              class="img-fluid"
+              alt="About Us"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5">
+      <div class="container-fluid">
+        <h2 class="text-center">Курсы</h2>
+        <div class="row d-flex justify-content-center">
+          <div class="d-flex flex-wrap justify-content-center">
+            <div class="card m-3" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://gb.ru/channels/geek-school-product/images/interest/python-security-3.svg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Компьютерная грамотность</h5>
+                <p class="card-text">
+                  Научим навыкам, необходимым для эффективного использования
+                  компьютеров и в повседневной жизни.
+                </p>
+                <a href="#" class="btn btn-outline-warning">Узнать больше</a>
+              </div>
+            </div>
+            <div class="card m-3" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://gb.ru/channels/geek-school-product/images/interest/minecraft-python-2.svg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Программирование на Python</h5>
+                <p class="card-text">
+                  Изучим один из самых популярных языков программирования:
+                  начиная с основ и до реальных продуктовых проектов
+                </p>
+                <a href="#" class="btn btn-outline-warning">Узнать больше</a>
+              </div>
+            </div>
+            <div class="card m-3" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://gb.ru/channels/geek-school-product/images/interest/interest-18.svg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Game dev</h5>
+                <p class="card-text">
+                  Нравится играть в игры? Научим создавать собственные с нуля:
+                  разработем дизайн и запрограммируем логику.
+                </p>
+                <a href="#" class="btn btn-outline-warning">Узнать больше</a>
+              </div>
+            </div>
+            <div class="card m-3" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://gb.ru/channels/geek-school-product/images/interest/interest-2.svg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Веб-дизайн</h5>
+                <p class="card-text">
+                  Погрузимся в профессию дизайнера: освоим основы создания user
+                  friendly веб-приложений, UX/UI-дизайна и изучим Figma
+                </p>
+                <a href="#" class="btn btn-outline-warning">Узнать больше</a>
+              </div>
+            </div>
+            <div class="card m-3" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://gb.ru/channels/geek-school-product/images/interest/interest-3.svg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Веб-программирование</h5>
+                <p class="card-text">
+                  Изучим основы веб-программирования: создадим сайты
+                  самостоятельно, используя HTML, CSS и JavaScript
+                </p>
+                <a href="#" class="btn btn-outline-warning">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section
+      id="instructors"
+      class="container-fluid py-5 m-0 d-flex justify-content-center"
+    >
+      <div class="container m-3">
+        <h2 class="text-center">Преподаватели Codix</h2>
+        <div class="row m-3">
+          <div class="col-md-4 text-center">
+            <img
+              src="https://sun9-18.userapi.com/impg/YCfCO8MD3p36vYAsLnGOq0ZBfa4pc_H34BYVQA/vlQnSDdHT-8.jpg?size=2560x2560&quality=95&sign=cb622ebbbdcdcee857b288501ab3d3c4&type=album"
+              class="rounded-circle mb-3"
+              alt="Instructor 1"
+            />
+            <h5>Дарья Эдуардовна</h5>
+            <p>Эксперт в веб-программировании</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="https://sun9-25.userapi.com/impg/ttqdTPNRHJVuZE6bi1ZSKyi9EUWGSyOhw6yoFA/e97SNnsuN98.jpg?size=815x827&quality=95&sign=9e7e43ce4f1d0400cb8d1076c44eb732&type=album"
+              class="rounded-circle mb-3"
+              alt="Instructor 2"
+            />
+            <h5>Павел Валерьевич</h5>
+            <p>Специиалист по Python</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="https://sun9-23.userapi.com/impg/w3FBQ1js2gszLsbnobK-U8i_ac0IgcO5sIGr5A/WTyHsw6N3SY.jpg?size=610x611&quality=95&sign=fcec896f9221008fb11bb994d5c37ad7&type=album"
+              class="rounded-circle mb-3"
+              alt="Instructor 3"
+            />
+            <h5>Илон Эрролович</h5>
+            <p>Гуру Game Dev</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <section id="testimonials" class="home-testimonial">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-center testimonial-pos">
+            <div class="col-md-12 d-flex justify-content-center">
+              <h2>Что говорят наши студенты</h2>
+            </div>
+          </div>
+          <section class="home-testimonial-bottom">
+            <div class="container testimonial-inner">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-4 style-3">
+                  <div class="tour-item">
+                    <div class="tour-desc bg-white">
+                      <div class="tour-text color-grey-3 text-center">
+                        &ldquo;Мне очень нравится учиться программированию в
+                        Codix. Я уже создал своего первого бота на Python и даже
+                        показал его друзьям. Это невероятно вдохновляет и
+                        мотивирует развиваться дальше!&rdquo;
+                      </div>
+                      <div class="d-flex justify-content-center pt-2 pb-2">
+                        <img
+                          class="tm-people"
+                          src="https://sun4-19.userapi.com/impg/AY4Lak-f4LFzs9TdNJkHJB93bPnwuyNwecYmFw/WZ4XUyqk2WM.jpg?size=1620x2160&quality=95&sign=147f5c99b4a0ad7857c979402617f3a7&type=album"
+                          alt=""
+                        />
+                      </div>
+                      <div class="link-name d-flex justify-content-center">
+                        Егор
+                      </div>
+                      <div class="link-position d-flex justify-content-center">
+                        Студент
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 style-3">
+                  <div class="tour-item">
+                    <div class="tour-desc bg-white">
+                      <div class="tour-text color-grey-3 text-center">
+                        &ldquo;Я долго не могла найти хобби, которое бы меня
+                        увлекло. Но курс веб-разработки Кодикса смог мне помочь.
+                        Теперь с удовольствием делаю разные фронтенд-проекты и
+                        общаюсь с новыми друзьями, которых нашла в здесь!&rdquo;
+                      </div>
+                      <div class="d-flex justify-content-center pt-2 pb-2">
+                        <img
+                          class="tm-people"
+                          src="https://sun9-70.userapi.com/impg/UqA-pwB9QCFRrDLGJt8xw0PGBdxLE-UuuH1liA/oHoENiR9RV4.jpg?size=1405x2160&quality=95&sign=7bf1c35c8404d37bde249ada8e9f8811&type=album"
+                          alt=""
+                        />
+                      </div>
+                      <div class="link-name d-flex justify-content-center">
+                        Лиза
+                      </div>
+                      <div class="link-position d-flex justify-content-center">
+                        Студентка
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 style-3">
+                  <div class="tour-item">
+                    <div class="tour-desc bg-white">
+                      <div class="tour-text color-grey-3 text-center">
+                        &ldquo;Мой внук Артём всегда интересовался компьютерами,
+                        но в Кодиксе он нашёл настоящее увлечение. Преподаватели
+                        не только отлично объясняют материал, но и создают
+                        дружелюбную и мотивирующую атмосферу.&rdquo;
+                      </div>
+                      <div class="d-flex justify-content-center pt-2 pb-2">
+                        <img
+                          class="tm-people"
+                          src="https://sun9-50.userapi.com/impg/ypBxyUQIhg7z9R-dDCMq005ALVAewwoCLiQexw/_-5BKKG90mM.jpg?size=913x1204&quality=95&sign=f400604e254742df37bcbd2419fb3fe7&type=album"
+                          alt=""
+                        />
+                      </div>
+                      <div class="link-name d-flex justify-content-center">
+                        Илья Дмитриевич
+                      </div>
+                      <div class="link-position d-flex justify-content-center">
+                        Дед нашего студента Артёма
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container-fluid py-5 m-0">
+      <div class="row">
+        <div class="col d-flex justify-content-end">
+          <div class="inline-block p-4" style="width: 80%">
+            <h4>Не знаете с чего начать?</h4>
+            <h5>Познакомьтесь с нашими курсами на бесплатном пробном уроке</h5>
+            <p>Оставьте заявку и мы:</p>
+            <ul>
+              <li>Ответим на все вопросы</li>
+              <li>Подберем подходящий курс исходя из интересов</li>
+              <li>Расскажем об акциях</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-start">
+          <div class="contact container-fluid bg-white p-4">
+            <h4 class="text-center">Напишите нам</h4>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName">Имя</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Ваше имя"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="Ваш email"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputMessage">Сообщение</label>
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  rows="4"
+                  placeholder="Ваше сообщение"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning">
+                Оставить заявку
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark text-center py-3">
+      <p>&copy; 2024 Codix. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
